@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kelioniu svetaine</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header site__header">
+      <div class="header__container container">
+        <a href="#home" class="header__logo"> ✈️ Keliaukime </a>
+
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Pradžia</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#pasiulymai" class="nav__link">Kelionių pasiūlymai</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#autonuoma" class="nav__link">Autonuoma</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#patarimai" class="nav__link">Patarimai</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#zurnalas" class="nav__link">Kelionių žurnalas</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#request" class="btn btn-outline-primary">
+            Kelionių užklausa
+          </a>
+
+          <a href="#login" class="btn btn-primary"> Log in </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="site__main container my-4">
+      <section id="home" class="page">
+        <div class="hero text-center my-4 animate-fade">
+          <h1 class="hero__title display-4">Atradimų pasaulis laukia jūsų</h1>
+
+          <p class="hero__subtitle lead">
+            Geriausi kelionių pasiūlymai, auto nuoma ir keliautojų patarimai
+            vienoje vietoje.
+          </p>
+
+          <div class="hero__video-container my-4">
+            <iframe
+              class="hero__video"
+              src="https://www.youtube.com/embed/UA4zK9AdPIA?start=11"
+              title="Kelionių video"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+
+        <section id="pasiulymai" class="section my-5">
+          <h2 class="section__title border-bottom pb-2">
+            1. Kelionių pasiūlymai
+          </h2>
+
+          <div class="deals-grid mt-4">
+            <div class="deals-card card">
+              <img
+                src="https://www.guliveriokeliones.lt/files/2019-12/10328_normal.jpg"
+                class="card-img-top"
+                alt="Ispanija - Barselona"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Ispanija - Barselona</h5>
+
+                <p class="card-text">
+                  Saulėta pakrantė, įspūdinga architektūra ir nepakartojama
+                  virtuvė.
+                </p>
+
+                <button class="btn btn-success">Kaina: 499 €</button>
+              </div>
+            </div>
+
+            <div class="deals-card card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboPmKnS2haKhQsQv5VJvY8WEY6nFtWapONNdZaw2CP1cWwvcyKaJDMQt0&s=10"
+                class="card-img-top"
+                alt="Italija - Roma"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Italija - Roma</h5>
+
+                <p class="card-text">
+                  Istorijos dvelksmas, Koliziejus ir skaniausi itališki ledai.
+                </p>
+
+                <button class="btn btn-success">Kaina: 389 €</button>
+              </div>
+            </div>
+
+            <div class="deals-card card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_TxHU_PkzoiXqh3NknoULcqWDVkh_EN8Sdr89oNIZNb-trYY1YzsYPJFH&s=10"
+                class="card-img-top"
+                alt="Graikija - Santorinis"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Graikija - Santorinis</h5>
+
+                <p class="card-text">
+                  Mėlyni stogai, nuostabūs saulėlydžiai ir skaidri jūros banga.
+                </p>
+
+                <button class="btn btn-success">Kaina: 650 €</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="patarimai" class="section my-5">
+          <h2 class="section__title border-bottom pb-2">
+            2. Patarimai keliaujantiems
+          </h2>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <h4>Svarbiausi žingsniai</h4>
+
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">
+                  Pasitikrinkite paso galiojimo laiką.
+                </li>
+
+                <li class="list-group-item">
+                  Pasirūpinkite kelionės draudimu.
+                </li>
+
+                <li class="list-group-item">Išsaugokite bilietus.</li>
+              </ol>
+            </div>
+
+            <div class="col-md-6">
+              <h4>Rekomendacijos</h4>
+
+              <ul class="list-group">
+                <li class="list-group-item">Pasidarykite dokumentų kopijas.</li>
+
+                <li class="list-group-item">
+                  Turėkite šiek tiek grynųjų pinigų.
+                </li>
+
+                <li class="list-group-item">Pasiimkite elektros adapterį.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="autonuoma" class="section my-5">
+          <h2 class="section__title border-bottom pb-2">
+            3. Autonuomos pasiūlymai
+          </h2>
+
+          <div class="table-responsive mt-3">
+            <table class="table table-bordered align-middle text-center">
+              <thead class="table-dark">
+                <tr>
+                  <th>Automobilio markė</th>
+                  <th>Nuotrauka</th>
+                  <th>1 dienos kaina</th>
+                  <th>3 dienų kaina</th>
+                  <th>7 dienų kaina</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="fw-bold">Volkswagen Golf</td>
+
+                  <td>
+                    <img
+                      src="https://uploads.vw-mms.de/system/production/images/vwn/021/953/images/c8f66396e4b8106041a94d6595053f3ad3c271d3/DB2016AU00844_web_1600.jpg?1649152300"
+                      alt="Volkswagen Golf"
+                    />
+                  </td>
+
+                  <td>35 €</td>
+                  <td>95 €</td>
+                  <td>200 €</td>
+                </tr>
+
+                <tr>
+                  <td class="fw-bold">Toyota RAV4</td>
+
+                  <td>
+                    <img
+                      src="https://www.actualidadmotor.com/wp-content/uploads/2022/02/Toyota-RAV4-2026-Portada-2048x1229.jpeg"
+                      alt="Toyota RAV4"
+                    />
+                  </td>
+
+                  <td>55 €</td>
+                  <td>150 €</td>
+                  <td>320 €</td>
+                </tr>
+
+                <tr>
+                  <td class="fw-bold">BMW 3 Serija</td>
+
+                  <td>
+                    <img
+                      src="https://infinitas-automotive.com/wp-content/uploads/2025/06/M3_G80_Stage3_infinitas1zu1.jpg"
+                      alt="BMW 3 Serija"
+                    />
+                  </td>
+
+                  <td>70 €</td>
+                  <td>190 €</td>
+                  <td>410 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="zurnalas" class="section my-5">
+          <h2 class="section__title border-bottom pb-2">
+            4. Kelionių žurnalas
+          </h2>
+
+          <div class="journal-list mt-4">
+            <article class="journal-item clearfix mb-4 p-3 border rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_yUkDuVZynB_EfyvAjnEE-d-bcF_jtelQLN_1HNK8L_r1UB0OCACnMM&s=10"
+                class="journal-item__img float-start me-3 rounded"
+                alt="Pavasaris Alpėse"
+              />
+
+              <h3>Pavasaris Alpėse</h3>
+
+              <h6>Kalnų oru ir slidinėjimo džiaugsmais</h6>
+
+              <p>
+                Kalnai pavasarį sužydi ypatingomis spalvomis. Tai puikus metas
+                aktyviam poilsiui.
+              </p>
+
+              <p>
+                <mark> Rekomenduojame apsilankyti iki gegužės mėnesio. </mark>
+              </p>
+
+              <a href="https://wikipedia.org" target="_blank">
+                Turizmo puslapis
+              </a>
+            </article>
+
+            <article class="journal-item clearfix mb-4 p-3 border rounded">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWbOPa9E9CJxS96s3Pn_jUeTU9zOMNPe1GljdH4I_NrRf3iNgosCKP7D46&s=10"
+                class="journal-item__img float-end ms-3 rounded"
+                alt="Azijos skoniai"
+              />
+
+              <h3>Azijos skoniai</h3>
+
+              <h6>Kulinarija ir kultūra</h6>
+
+              <p>Gatvės maistas Tailande ir Vietname stebina savo įvairove.</p>
+
+              <p>
+                <em> Atraskite egzotinius prieskonius ir receptus. </em>
+              </p>
+
+              <a href="https://wikipedia.org" target="_blank">
+                Skaityti daugiau
+              </a>
+            </article>
+
+            <article class="journal-item clearfix mb-4 p-3 border rounded">
+              <img
+                src="https://kelioniuakademija.lt/keliones_images/Norvegija.jpg"
+                class="journal-item__img float-start me-3 rounded"
+                alt="Norvegijos fiordai"
+              />
+
+              <h3>Norvegijos fiordai</h3>
+
+              <h6>Šiaurės gamtos stebuklai</h6>
+
+              <p>
+                Kelionė per Norvegiją leidžia pamatyti didingus fiordus iš arti.
+              </p>
+
+              <p>
+                <strong> Nepamirškite šiltų drabužių! </strong>
+              </p>
+
+              <a href="https://wikipedia.org" target="_blank"> Maršrutas </a>
+            </article>
+
+            <article class="journal-item clearfix mb-4 p-3 border rounded">
+              <img
+                src="https://www.makalius.lt/wp-content/gallery/kenija-safaris-3-diena-paid/kenija-safaris-masinos.jpg"
+                class="journal-item__img float-end ms-3 rounded"
+                alt="Afrikos safari"
+              />
+
+              <h3>Afrikos safari</h3>
+
+              <h6>Laukinės gamtos pėdsakais</h6>
+
+              <p>
+                Tiesioginis susitikimas su liūtais ir drambliais palieka įspūdį
+                visam gyvenimui.
+              </p>
+
+              <p>
+                <q> Gamta yra didingiausias menininkas. </q>
+              </p>
+
+              <a href="https://wikipedia.org" target="_blank">
+                Parkų taisyklės
+              </a>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section id="request" class="page">
+        <h2 class="mb-4">Kelionės užklausos forma</h2>
+
+        <form
+          action="#home"
+          method="get"
+          class="form-custom p-4 border rounded shadow-sm bg-light"
+        >
+          <div class="mb-3">
+            <label for="req-name" class="form-label"> Vardas: </label>
+
+            <input
+              type="text"
+              class="form-control"
+              id="req-name"
+              name="name"
+              required
+              placeholder="Jūsų vardas"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="req-email" class="form-label"> E-mail: </label>
+
+            <input
+              type="email"
+              class="form-control"
+              id="req-email"
+              name="email"
+              required
+              placeholder="vardas@example.com"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="req-phone" class="form-label">
+              Telefono numeris:
+            </label>
+
+            <input
+              type="tel"
+              class="form-control"
+              id="req-phone"
+              name="phone"
+              required
+              placeholder="+37060000000"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="req-country" class="form-label">
+              Pasirinkite šalį:
+            </label>
+
+            <select
+              class="form-select"
+              id="req-country"
+              name="country"
+              required
+            >
+              <option value="">-- Pasirinkite --</option>
+
+              <optgroup label="Europa">
+                <option value="es">Ispanija</option>
+
+                <option value="it">Italija</option>
+
+                <option value="gr">Graikija</option>
+              </optgroup>
+
+              <optgroup label="Azija">
+                <option value="th">Tailandas</option>
+
+                <option value="jp">Japonija</option>
+
+                <option value="vn">Vietnamas</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="req-type" class="form-label"> Kelionės tipas: </label>
+
+            <select
+              class="form-select"
+              id="req-type"
+              name="travel-type"
+              required
+            >
+              <option value="">-- Pasirinkite --</option>
+
+              <optgroup label="Poilsinės">
+                <option value="all-inclusive">Viskas įskaičiuota</option>
+
+                <option value="spa">SPA ir poilsis</option>
+
+                <option value="beach">Paplūdimio atostogos</option>
+              </optgroup>
+
+              <optgroup label="Aktyvios">
+                <option value="hiking">Žygiai kalnuose</option>
+
+                <option value="skiing">Slidinėjimas</option>
+
+                <option value="camping">Stovyklavimas</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="req-date" class="form-label"> Planuojama data: </label>
+
+            <input
+              type="date"
+              class="form-control"
+              id="req-date"
+              name="date"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block"> Papildomos paslaugos: </label>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="c1"
+                name="services"
+                value="insurance"
+              />
+
+              <label class="form-check-label" for="c1"> Draudimas </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="c2"
+                name="services"
+                value="food"
+              />
+
+              <label class="form-check-label" for="c2"> Maitinimas </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="c3"
+                name="services"
+                value="excursions"
+              />
+
+              <label class="form-check-label" for="c3"> Ekskursijos </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="c4"
+                name="services"
+                value="car"
+              />
+
+              <label class="form-check-label" for="c4"> Auto nuoma </label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label d-block"> Mokėjimo būdas: </label>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="payment"
+                id="r1"
+                value="card"
+                required
+              />
+
+              <label class="form-check-label" for="r1"> Kortele </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="payment"
+                id="r2"
+                value="bank"
+              />
+
+              <label class="form-check-label" for="r2">
+                Bankiniu pavedimu
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="payment"
+                id="r3"
+                value="cash"
+              />
+
+              <label class="form-check-label" for="r3">
+                Grynaisiais biure
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="payment"
+                id="r4"
+                value="installments"
+              />
+
+              <label class="form-check-label" for="r4"> Išsimokėtinai </label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="req-text" class="form-label">
+              Komentaras / Pageidavimai:
+            </label>
+
+            <textarea
+              class="form-control"
+              id="req-text"
+              name="comment"
+              rows="4"
+              placeholder="Įrašykite savo pastabas..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Siųsti užklausą
+          </button>
+        </form>
+      </section>
+
+      <section id="login" class="page">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h2 class="text-center mb-4">Prisijungimas</h2>
+
+            <form
+              action="#blog"
+              method="get"
+              class="form-login p-4 border rounded shadow-sm bg-light"
+            >
+              <div class="mb-3">
+                <label for="login-name" class="form-label"> Vardas: </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="login-name"
+                  name="name"
+                  required
+                  placeholder="Vardas"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="login-email" class="form-label"> E-mail: </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="login-email"
+                  name="email"
+                  required
+                  placeholder="El. paštas"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="login-pass" class="form-label">
+                  Slaptažodis:
+                </label>
+
+                <input
+                  type="password"
+                  class="form-control"
+                  id="login-pass"
+                  name="password"
+                  required
+                  placeholder="Slaptažodis"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Prisijungti
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="page">
+        <h2 class="mb-4">Mano asmeninis Blog'as</h2>
+
+        <div class="row g-4 mb-5">
+          <article class="col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/500/250?random=30"
+                class="card-img-top"
+                alt="Islandija"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Atradimai Islandijoje</h5>
+
+                <p class="card-text">
+                  Ugnikalniai, geizeriai ir ledynai. Įspūdžiai iš savaitės
+                  kelionės aplink salą.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  onclick="
+                    alert('Skaitoma daugiau...');
+                    return false;
+                  "
+                >
+                  Skaityti daugiau
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/500/250?random=31"
+                class="card-img-top"
+                alt="Paryžius"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Savaitgalis Paryžiuje</h5>
+
+                <p class="card-text">
+                  Kavinukės, muziejai ir vakariniai pasivaikščiojimai prie
+                  Senos.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  onclick="
+                    alert('Skaitoma daugiau...');
+                    return false;
+                  "
+                >
+                  Skaityti daugiau
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/500/250?random=32"
+                class="card-img-top"
+                alt="Japonija"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Japonijos vyšnios</h5>
+
+                <p class="card-text">
+                  Sakurų žydėjimo šventė Kiote ir Tokijo futuristinės gatvės.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  onclick="
+                    alert('Skaitoma daugiau...');
+                    return false;
+                  "
+                >
+                  Skaityti daugiau
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-md-6">
+            <div class="card h-100">
+              <img
+                src="https://picsum.photos/500/250?random=33"
+                class="card-img-top"
+                alt="Kipras"
+              />
+
+              <div class="card-body">
+                <h5 class="card-title">Kipro paplūdimiai</h5>
+
+                <p class="card-text">
+                  Skaidrus vanduo, šiltas oras ir puikios įlankos.
+                </p>
+
+                <a
+                  href="#"
+                  class="btn btn-outline-primary"
+                  onclick="
+                    alert('Skaitoma daugiau...');
+                    return false;
+                  "
+                >
+                  Skaityti daugiau
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h3>Nuotraukų galerija</h3>
+
+        <div class="gallery-grid mt-3">
+          <img
+            src="https://picsum.photos/300/200?random=40"
+            alt="Galerija 1"
+            class="gallery-grid__item"
+          />
+
+          <img
+            src="https://picsum.photos/300/200?random=41"
+            alt="Galerija 2"
+            class="gallery-grid__item"
+          />
+
+          <img
+            src="https://picsum.photos/300/200?random=42"
+            alt="Galerija 3"
+            class="gallery-grid__item"
+          />
+
+          <img
+            src="https://picsum.photos/300/200?random=43"
+            alt="Galerija 4"
+            class="gallery-grid__item"
+          />
+
+          <img
+            src="https://picsum.photos/300/200?random=44"
+            alt="Galerija 5"
+            class="gallery-grid__item"
+          />
+
+          <img
+            src="https://picsum.photos/300/200?random=45"
+            alt="Galerija 6"
+            class="gallery-grid__item"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer site__footer">
+      <div class="container">
+        <p>&copy; 2026 Kelionių Portalo Užduotis. Visos teisės saugomos.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
